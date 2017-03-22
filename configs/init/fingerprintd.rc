@@ -1,6 +1,6 @@
 # vim: set ft=sh:
 
-service fingerprintd /system/bin/fingerprintd
+service fingerprintd /vendor/bin/fingerprintd
     class late_start
     user system
     group drmrpc input system
