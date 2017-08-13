@@ -221,11 +221,6 @@ bin/ipacm-diag
 # Keystore
 vendor/lib64/hw/keystore.msm8952.so
 
-# Listen - from samsung c9ltezc
-vendor/lib/hw/sound_trigger.primary.msm8952.so|9e93a1ab410239abe56c0f2c6d5f2c806004b282
-vendor/lib/libadpcmdec.so|48c425e9e7bfdfb0665530d5b7e5011ac63aa2e2
-vendor/lib/libsmwrapper.so|0ac9e3e0dffae1c33fb4bb9144eb5c3c79efe344
-
 # Media
 lib64/libOmxVpp.so
 lib64/libvpplibrary.so
