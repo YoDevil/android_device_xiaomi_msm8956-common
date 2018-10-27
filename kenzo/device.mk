@@ -20,6 +20,14 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/kenzo/kenzo-vendor.mk)
 
+# Device-specific permissions
+PRODUCT_COPY_FILES += $(foreach permission, $(wildcard $(LOCAL_PATH)/configs/permissions/*), \
+    $(permission):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/permissions/, $(notdir $(permission))) )
+
+# Cellular data configuration files
+PRODUCT_COPY_FILES += $(foreach data_config, $(wildcard $(LOCAL_PATH)/configs/data/*), \
+    $(data_config):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/data/, $(notdir $(data_config))) )
+
 # Device-specific audio configs
 PRODUCT_COPY_FILES += $(foreach audio_config, $(wildcard $(LOCAL_PATH)/configs/audio/*), \
     $(audio_config):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(audio_config))) )

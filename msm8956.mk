@@ -67,6 +67,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Device-specific permissions
+PRODUCT_COPY_FILES += $(foreach permission, $(wildcard $(LOCAL_PATH)/configs/permissions/*), \
+    $(permission):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/permissions/, $(notdir $(permission))) )
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
@@ -116,6 +120,10 @@ PRODUCT_PACKAGES += \
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
+
+# CNE configs
+PRODUCT_COPY_FILES += $(foreach config, $(wildcard $(LOCAL_PATH)/configs/cne/*), \
+    $(config):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/cne/, $(notdir $(config))) )
 
 # Consumerir
 PRODUCT_PACKAGES += \

@@ -479,10 +479,6 @@ etc/firmware/goodixfp.mdt
 # QMI
 bin/irsc_util
 etc/mbn_ota.txt
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
-etc/data/qmi_config.xml
-etc/permissions/qti_permissions.xml
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libdsutils.so
@@ -530,8 +526,6 @@ bin/qmuxd
 bin/radish
 bin/rmt_storage
 bin/tftp_server
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/Diag.cfg

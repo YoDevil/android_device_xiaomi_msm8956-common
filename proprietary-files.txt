@@ -69,11 +69,6 @@ bin/hvdcp_opti
 
 # CNE
 bin/cnd
-etc/cne/andsfCne.xml
-etc/cne/SwimConfig.xml
-etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
-etc/permissions/ConnectivityExt.xml
 framework/cneapiclient.jar
 framework/com.quicinc.cne.jar
 framework/ConnectivityExt.jar
@@ -291,7 +286,6 @@ vendor/lib64/libperipheral_client.so
 vendor/lib/libperipheral_client.so
 
 # Postprocessing
-etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
 -vendor/app/colorservice/colorservice.apk
 vendor/bin/mm-pp-daemon
@@ -308,7 +302,6 @@ bin/ims_rtp_daemon
 bin/imscmservice
 bin/imsdatadaemon
 bin/imsqmidaemon
-etc/permissions/imscm.xml
 framework/imscmlibrary.jar
 framework/rcsimssettings.jar
 -vendor/app/ims/ims.apk
