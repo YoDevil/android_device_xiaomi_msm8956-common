@@ -4,5 +4,5 @@ service ipacm-diag /system/bin/ipacm-diag
     class main
     user system
     socket ipacm_log_file dgram 660 system net_admin
-    group net_admin qcom_diag
+    group net_admin vendor_qti_diag
     writepid /dev/cpuset/system-background/tasks
