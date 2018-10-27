@@ -521,11 +521,11 @@ vendor/lib/libsmemlog.so
 -app/shutdownlistener/shutdownlistener.apk
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-bin/tftp_server
+bin/netmgrd:vendor/bin/netmgrd
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+bin/rmt_storage:vendor/bin/rmt_storage
+bin/tftp_server:vendor/bin/tftp_server
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/Diag.cfg
