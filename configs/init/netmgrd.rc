@@ -1,7 +1,9 @@
 # vim: set ft=sh:
 
-service netmgrd /system/bin/netmgrd
+service netmgrd /vendor/bin/netmgrd
     class main
+    user root
+    group root wifi wakelock radio inet vendor_qti_diag
     writepid /dev/cpuset/system-background/tasks
 
 on boot
