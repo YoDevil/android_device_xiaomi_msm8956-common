@@ -270,6 +270,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gnss@1.0-v27.so \
+
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/vintf/hidl.mk)
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/vintf/manifest.xml

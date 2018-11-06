@@ -28,12 +28,3 @@ MY_DIR=$(dirname $(readlink -f "${BASH_SOURCE[0]}"))
 
 ${MY_DIR}/../extract-files.sh $@
 
-LINEAGE_ROOT=$(readlink -f "${MY_DIR}/../../../..")
-BLOB_ROOT="${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary"
-
-# Blob fixups
-for fixup in $(find "${MY_DIR}/proprietary-files-fixups/" -name '*.sh'); do
-	blob_name=$(basename "${fixup}" | sed -e 's|\(.*\).sh|\1|g' -e 's|#|/|g')
-	echo "Fixing up ${blob_name}"
-	${fixup} "${BLOB_ROOT}/${blob_name}"
-done

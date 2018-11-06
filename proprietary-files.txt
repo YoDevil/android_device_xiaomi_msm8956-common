@@ -151,7 +151,7 @@ vendor/lib64/libslimclient.so|31c7b119598147ff6b97b86a3fb5ed93939e398b
 vendor/lib64/libulp2.so|a7325ec5cfdd54a44dca7465f51c531bfcd62062
 vendor/lib64/libxtadapter.so|9a8fbd106994aaaf380be883fa2ef37d04e20401
 vendor/lib64/libxtwifi_ulp_adaptor.so|078124cc018badf89c1f5588e9102e9f7c034da2
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so|249c76153f8de014bf2dd2ab623ee3d87741fbc8
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so|249c76153f8de014bf2dd2ab623ee3d87741fbc8|f7e9ee8e3804887a2f3939128e860767e6f27258
 
 # Graphics
 vendor/lib/libmmQSM.so # linked by libmmipstreamsourcehttp.so
