@@ -163,7 +163,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8952 \
+    libgnss \
     libcurl
 
 PRODUCT_PACKAGES += \
