@@ -1,0 +1,2 @@
+import /init.recovery.qcom.power.rc
+import /init.recovery.qcom.usb.rc
