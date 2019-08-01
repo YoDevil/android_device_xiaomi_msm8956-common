@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # SoC-specific audio configs
 PRODUCT_COPY_FILES += $(foreach audio_config, $(wildcard $(LOCAL_PATH)/configs/audio/*), \
-    $(audio_config):$(addprefix $(TARGET_COPY_OUT_SYSTEM)/etc/, $(notdir $(audio_config))) )
+    $(audio_config):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(audio_config))) )
 
 # Standard audio configs
 PRODUCT_COPY_FILES += \
